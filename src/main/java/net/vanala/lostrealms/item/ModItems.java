@@ -10,9 +10,11 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(LostRealms.MOD_ID);
 
-    public static final DeferredItem<Item> FOSSILSHARD = ITEMS.register("fossil_shard",
+    public static final DeferredItem<Item> FOSSIL_SHARD = ITEMS.register("fossil_shard",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ANCIENTTOTEM = ITEMS.register("ancient_totem",
+    public static final DeferredItem<Item> ANCIENT_TOTEM = ITEMS.register("ancient_totem",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
 
 
