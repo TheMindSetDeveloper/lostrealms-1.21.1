@@ -1,6 +1,9 @@
 package net.vanala.lostrealms;
 
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.vanala.lostrealms.block.ModBlocks;
+import net.vanala.lostrealms.entity.ModEntities;
+import net.vanala.lostrealms.entity.client.LeopardRenderer;
 import net.vanala.lostrealms.item.ModCreativeModeTabs;
 import net.vanala.lostrealms.item.ModItems;
 import org.slf4j.Logger;
@@ -42,6 +45,7 @@ public class LostRealms {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -69,6 +73,9 @@ public class LostRealms {
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.FOSSIL_BLOCK);
         }
+        if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+            event.accept(ModItems.LEOPARD_SPAWN_EGG);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -82,7 +89,7 @@ public class LostRealms {
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.LEOPARD.get(), LeopardRenderer::new);
         }
     }
 }

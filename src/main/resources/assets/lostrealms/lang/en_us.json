@@ -3,6 +3,7 @@
   "item.lostrealms.fossil_shard": "Fossil Shard",
   "item.lostrealms.ancient_totem": "Ancient Totem",
   "item.lostrealms.steel_ingot": "Steel Ingot",
+  "item.lostrealms.leopard_spawn_egg": "Leopard Spawn Egg",
 
   "block.lostrealms.fossil_block": "Fossil Block",
   "block.lostrealms.steel_block": "Steel Block",
@@ -10,6 +11,7 @@
   "creativetab.lostrealms.prehistoric_items": "Prehistoric Items",
   "creativetab.lostrealms.prehistoric_blocks": "Prehistoric Blocks",
   "creativetab.lostrealms.post_historic_items": "Post-Historic Items",
-  "creativetab.lostrealms.post_historic_blocks": "Post-Historic Blocks"
+  "creativetab.lostrealms.post_historic_blocks": "Post-Historic Blocks",
 
+  "entity.mccourse.leopard": "Leopard"
 }

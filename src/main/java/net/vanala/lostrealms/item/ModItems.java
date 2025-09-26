@@ -2,9 +2,11 @@ package net.vanala.lostrealms.item;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.vanala.lostrealms.LostRealms;
+import net.vanala.lostrealms.entity.ModEntities;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS =
@@ -16,7 +18,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
-
+    public static final DeferredItem<Item> LEOPARD_SPAWN_EGG = ITEMS.register("leopard_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.LEOPARD, 0x5f5f5f, 0x5a5a5a,
+                    new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

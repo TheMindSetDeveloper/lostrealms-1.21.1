@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.FOSSIL_SHARD);
                 output.accept(ModItems.ANCIENT_TOTEM);
+                output.accept(ModItems.LEOPARD_SPAWN_EGG);
             }).build());
 
     public static final Supplier<CreativeModeTab> PREHISTORIC_BLOCKS_TAB = CREATIVE_MODE_TAB.register("prehistoric_blocks_tab",
