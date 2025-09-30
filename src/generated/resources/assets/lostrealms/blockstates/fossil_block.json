@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lostrealms:block/fossil_block"
+    }
+  }
+}

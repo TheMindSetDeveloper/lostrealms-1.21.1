@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fossil_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lostrealms:fossil_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lostrealms:fossil_fuel_from_smelting_fossil_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fossil_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lostrealms:fossil_fuel_from_smelting_fossil_dust"
+    ]
+  }
+}

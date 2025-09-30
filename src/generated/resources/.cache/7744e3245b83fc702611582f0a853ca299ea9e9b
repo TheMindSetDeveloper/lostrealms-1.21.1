@@ -1,0 +1,4 @@
+// 1.21	2025-09-30T01:49:28.2656338	Tags for minecraft:block mod id lostrealms
+d0750b7c6135563789d4e9141b6d6dda891f7325 data/minecraft/tags/block/mineable/pickaxe.json
+37b2d04ae503511853c765edfe7d2929c4940fd2 data/minecraft/tags/block/needs_iron_tool.json
+578199546e3e846b05864894bee3c7615a2de84f data/minecraft/tags/block/needs_stone_tool.json

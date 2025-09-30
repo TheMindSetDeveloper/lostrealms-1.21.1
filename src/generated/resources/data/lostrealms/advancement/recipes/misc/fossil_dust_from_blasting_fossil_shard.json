@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fossil_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lostrealms:fossil_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lostrealms:fossil_dust_from_blasting_fossil_shard"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fossil_shard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lostrealms:fossil_dust_from_blasting_fossil_shard"
+    ]
+  }
+}

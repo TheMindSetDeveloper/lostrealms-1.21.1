@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 2000,
+  "experience": 0.5,
+  "group": "fossil",
+  "ingredient": {
+    "item": "lostrealms:fossil_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "lostrealms:fossil_fuel"
+  }
+}
