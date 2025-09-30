@@ -13,6 +13,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        basicItem(ModItems.FOSSIL_SHARD.get());
+        basicItem(ModItems.FOSSIL_DUST.get());
+        basicItem(ModItems.FOSSIL_FUEL.get());
+        basicItem(ModItems.ANCIENT_TOTEM.get());
+
+        basicItem(ModItems.STEEL_INGOT.get());
+
         withExistingParent(ModItems.LEOPARD_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 }

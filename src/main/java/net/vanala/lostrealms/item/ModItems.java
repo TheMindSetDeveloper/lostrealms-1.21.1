@@ -14,6 +14,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> FOSSIL_SHARD = ITEMS.register("fossil_shard",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FOSSIL_DUST = ITEMS.register("fossil_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FOSSIL_FUEL = ITEMS.register("fossil_fuel",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ANCIENT_TOTEM = ITEMS.register("ancient_totem",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",

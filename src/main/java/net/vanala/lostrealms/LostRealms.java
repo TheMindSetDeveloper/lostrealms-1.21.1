@@ -1,7 +1,7 @@
 package net.vanala.lostrealms;
 
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.vanala.lostrealms.block.ModBlocks;
+import net.vanala.lostrealms.block.custom.ModBlocks;
 import net.vanala.lostrealms.entity.ModEntities;
 import net.vanala.lostrealms.entity.client.LeopardRenderer;
 import net.vanala.lostrealms.item.ModCreativeModeTabs;
@@ -62,6 +62,8 @@ public class LostRealms {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.FOSSIL_SHARD);
+            event.accept(ModItems.FOSSIL_DUST);
+            event.accept(ModItems.FOSSIL_FUEL);
             event.accept(ModItems.STEEL_INGOT);
         }
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

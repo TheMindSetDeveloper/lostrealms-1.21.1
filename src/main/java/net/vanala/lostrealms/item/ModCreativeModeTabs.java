@@ -8,7 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.vanala.lostrealms.LostRealms;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.vanala.lostrealms.block.ModBlocks;
+import net.vanala.lostrealms.block.custom.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -22,13 +22,23 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("creativetab.lostrealms.prehistoric_items"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.FOSSIL_SHARD);
+                output.accept(ModItems.FOSSIL_DUST);
+                output.accept(ModItems.FOSSIL_FUEL);
                 output.accept(ModItems.ANCIENT_TOTEM);
-                output.accept(ModItems.LEOPARD_SPAWN_EGG);
             }).build());
+
+    public static final Supplier<CreativeModeTab> PREHISTORIC_MOBS_TAB = CREATIVE_MODE_TAB.register("prehistoric_mobs_tab",
+            () -> CreativeModeTab.builder()
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LostRealms.MOD_ID, "prehistoric_items_tab"))
+                    .icon(() -> new ItemStack(ModItems.LEOPARD_SPAWN_EGG.get()))
+                    .title(Component.translatable("creativetab.lostrealms.prehistoric_mobs"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.LEOPARD_SPAWN_EGG);
+                    }).build());
 
     public static final Supplier<CreativeModeTab> PREHISTORIC_BLOCKS_TAB = CREATIVE_MODE_TAB.register("prehistoric_blocks_tab",
             () -> CreativeModeTab.builder()
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LostRealms.MOD_ID, "prehistoric_items_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LostRealms.MOD_ID, "prehistoric_mobs_tab"))
                     .icon(() -> new ItemStack(ModBlocks.FOSSIL_BLOCK.get()))
             .title(Component.translatable("creativetab.lostrealms.prehistoric_blocks"))
             .displayItems((itemDisplayParameters, output) -> {

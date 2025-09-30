@@ -1,4 +1,4 @@
-package net.vanala.lostrealms.block;
+package net.vanala.lostrealms.block.custom;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
