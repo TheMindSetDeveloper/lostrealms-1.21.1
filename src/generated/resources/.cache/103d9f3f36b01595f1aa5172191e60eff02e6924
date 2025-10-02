@@ -1,0 +1,6 @@
+// 1.21	2025-09-30T23:40:03.6645888	Registries
+04e26a16998a4351f4a6e165b3fe5d71b61bd8f6 data/lostrealms/neoforge/biome_modifier/add_fossil_block.json
+526c4b8faf24474478ae22a908baf6b278351294 data/lostrealms/neoforge/biome_modifier/spawn_komodo_dragon.json
+b7af5c1a8011db00381c4a0e5bdfa6024c468cd7 data/lostrealms/neoforge/biome_modifier/spawn_leopard.json
+72110bed9f0cd4a53eca44392bf1e10f959ac8d4 data/lostrealms/worldgen/configured_feature/fossil_block.json
+307c216dae53315a1a5e70a00515fd5b647b7ce3 data/lostrealms/worldgen/placed_feature/fossil_block_placed.json
