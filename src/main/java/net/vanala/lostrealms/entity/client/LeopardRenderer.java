@@ -10,7 +10,7 @@ import net.vanala.lostrealms.entity.custom.LeopardEntity;
 
 public class LeopardRenderer extends MobRenderer<LeopardEntity, LeopardModel<LeopardEntity>> {
     public LeopardRenderer(EntityRendererProvider.Context context) {
-        super(context, new LeopardModel<>(context.bakeLayer(LeopardModel.LAYER_LOCATION)), 0.25f);
+        super(context, new LeopardModel<>(context.bakeLayer(LeopardModel.LAYER_LOCATION)), 0.5f);
     }
 
     @Override

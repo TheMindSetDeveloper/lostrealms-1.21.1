@@ -3,6 +3,7 @@ package net.vanala.lostrealms;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.vanala.lostrealms.block.custom.ModBlocks;
 import net.vanala.lostrealms.entity.ModEntities;
+import net.vanala.lostrealms.entity.client.KomodoDragonRenderer;
 import net.vanala.lostrealms.entity.client.LeopardRenderer;
 import net.vanala.lostrealms.item.ModCreativeModeTabs;
 import net.vanala.lostrealms.item.ModItems;
@@ -77,6 +78,7 @@ public class LostRealms {
         }
         if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
             event.accept(ModItems.LEOPARD_SPAWN_EGG);
+            event.accept(ModItems.KOMODO_DRAGON_SPAWN_EGG);
         }
     }
 
@@ -92,6 +94,7 @@ public class LostRealms {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.LEOPARD.get(), LeopardRenderer::new);
+            EntityRenderers.register(ModEntities.KOMODO_DRAGON.get(), KomodoDragonRenderer::new);
         }
     }
 }

@@ -25,6 +25,9 @@ public class ModItems {
     public static final DeferredItem<Item> LEOPARD_SPAWN_EGG = ITEMS.register("leopard_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.LEOPARD, 0x5f5f5f, 0x5a5a5a,
                     new Item.Properties()));
+    public static final DeferredItem<Item> KOMODO_DRAGON_SPAWN_EGG = ITEMS.register("komodo_dragon_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.KOMODO_DRAGON, 0x3a453a, 0x324a32,
+                    new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

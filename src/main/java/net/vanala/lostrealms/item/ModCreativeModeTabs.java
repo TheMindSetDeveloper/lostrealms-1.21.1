@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.lostrealms.prehistoric_mobs"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.LEOPARD_SPAWN_EGG);
+                        output.accept(ModItems.KOMODO_DRAGON_SPAWN_EGG);
                     }).build());
 
     public static final Supplier<CreativeModeTab> PREHISTORIC_BLOCKS_TAB = CREATIVE_MODE_TAB.register("prehistoric_blocks_tab",

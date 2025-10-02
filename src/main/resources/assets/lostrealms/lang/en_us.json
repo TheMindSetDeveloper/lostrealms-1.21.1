@@ -6,6 +6,7 @@
   "item.lostrealms.ancient_totem": "Ancient Totem",
   "item.lostrealms.steel_ingot": "Steel Ingot",
   "item.lostrealms.leopard_spawn_egg": "Leopard Spawn Egg",
+  "item.lostrealms.komodo_dragon_spawn_egg": "Komodo Dragon Spawn Egg",
 
   "block.lostrealms.fossil_block": "Fossil Block",
   "block.lostrealms.steel_block": "Steel Block",
@@ -16,5 +17,6 @@
   "creativetab.lostrealms.post_historic_items": "Post-Historic Items",
   "creativetab.lostrealms.post_historic_blocks": "Post-Historic Blocks",
 
-  "entity.mccourse.leopard": "Leopard"
+  "entity.mccourse.leopard": "Leopard",
+  "entity.mccourse.komodo_dragon": "Komodo Dragon"
 }

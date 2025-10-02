@@ -10,6 +10,9 @@ import net.vanala.lostrealms.LostRealms;
 
 import static net.vanala.lostrealms.util.ModTags.Blocks.createTag;
 public class ModTags {
+
+    public static final TagKey<Block> LEOPARD_SPAWNABLE_ON = createTag("leopard_spawnable_on");
+
     public static class Blocks {
 
         static TagKey<Block> createTag(String name) {

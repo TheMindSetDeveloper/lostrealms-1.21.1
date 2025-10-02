@@ -4,14 +4,29 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.vanala.lostrealms.LostRealms;
+import net.vanala.lostrealms.block.custom.ModBlocks;
+
+import java.util.List;
 
 public class ModConfiguredFeatures {
+    public static final ResourceKey<ConfiguredFeature<?,?>> OVERWORLD_FOSSIL_BLOCK_KEY = registerKey("fossil_block");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
+
+        RuleTest stoneReplaceables =new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+
+        List<OreConfiguration.TargetBlockState> overworldFossilBlocks = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.FOSSIL_BLOCK.get().defaultBlockState()));
+
+        register(context, OVERWORLD_FOSSIL_BLOCK_KEY, Feature.ORE, new OreConfiguration(overworldFossilBlocks, 3));
 
     }
 

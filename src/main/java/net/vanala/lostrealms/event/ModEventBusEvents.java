@@ -10,7 +10,9 @@ import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.vanala.lostrealms.LostRealms;
 import net.vanala.lostrealms.entity.ModEntities;
+import net.vanala.lostrealms.entity.client.KomodoDragonModel;
 import net.vanala.lostrealms.entity.client.LeopardModel;
+import net.vanala.lostrealms.entity.custom.KomodoDragonEntity;
 import net.vanala.lostrealms.entity.custom.LeopardEntity;
 
 @EventBusSubscriber(modid = LostRealms.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
@@ -19,16 +21,20 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(LeopardModel.LAYER_LOCATION, LeopardModel::createBodyLayer);
+        event.registerLayerDefinition(KomodoDragonModel.LAYER_LOCATION, KomodoDragonModel::createBodyLayer);
     }
 
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.LEOPARD.get(), LeopardEntity.createAttributes().build());
+        event.put(ModEntities.KOMODO_DRAGON.get(), KomodoDragonEntity.createAttributes().build());
     }
 
     @SubscribeEvent
     public static void registerSpawnPlacements(RegisterSpawnPlacementsEvent event) {
         event.register(ModEntities.LEOPARD.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                LeopardEntity::checkLeopardSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(ModEntities.KOMODO_DRAGON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Animal::checkAnimalSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
     }
 }
