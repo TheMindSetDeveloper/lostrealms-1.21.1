@@ -22,6 +22,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> OXYGENATED_IRON_INGOT = ITEMS.register("oxygenated_iron_ingot",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LEOPARD_SPAWN_EGG = ITEMS.register("leopard_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.LEOPARD, 0x5f5f5f, 0x5a5a5a,
                     new Item.Properties()));

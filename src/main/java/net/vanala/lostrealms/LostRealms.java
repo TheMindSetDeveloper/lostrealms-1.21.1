@@ -66,6 +66,7 @@ public class LostRealms {
             event.accept(ModItems.FOSSIL_DUST);
             event.accept(ModItems.FOSSIL_FUEL);
             event.accept(ModItems.STEEL_INGOT);
+            event.accept(ModItems.OXYGENATED_IRON_INGOT);
         }
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.ANCIENT_TOTEM);

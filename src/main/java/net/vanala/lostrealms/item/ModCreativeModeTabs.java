@@ -53,6 +53,7 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("creativetab.lostrealms.post_historic_items"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.STEEL_INGOT);
+                output.accept(ModItems.OXYGENATED_IRON_INGOT);
             }).build());
 
     public static final Supplier<CreativeModeTab> POST_HISTORIC_BLOCKS_TAB = CREATIVE_MODE_TAB.register("post_historic_blocks_tab",

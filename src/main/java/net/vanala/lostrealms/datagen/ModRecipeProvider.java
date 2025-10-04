@@ -38,6 +38,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('S', ModItems.STEEL_INGOT.get())
                 .unlockedBy("has_steel_ingot", has(ModItems.STEEL_INGOT)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.NAME_TAG.asItem())
+                .pattern("  S")
+                .pattern(" I ")
+                .pattern("P  ")
+                .define('S', Items.STRING.asItem())
+                .define('I', Items.IRON_INGOT.asItem())
+                .define('P', Items.PAPER.asItem())
+                .unlockedBy("has_string", has(Items.STRING)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL_INGOT.get(), 9)
                 .requires(ModBlocks.STEEL_BLOCK)
                 .unlockedBy("has_steel_block", has(ModBlocks.STEEL_BLOCK)).save(recipeOutput);

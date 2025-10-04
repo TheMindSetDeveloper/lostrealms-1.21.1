@@ -20,5 +20,6 @@ public class ModEntitiesLootTables extends EntityLootSubProvider {
     @Override
     public void generate() {
         this.add(ModEntities.LEOPARD.get(), LootTable.lootTable());
+        this.add(ModEntities.KOMODO_DRAGON.get(), LootTable.lootTable());
     }
 }

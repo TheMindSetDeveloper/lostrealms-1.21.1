@@ -19,6 +19,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ANCIENT_TOTEM.get());
 
         basicItem(ModItems.STEEL_INGOT.get());
+        basicItem(ModItems.OXYGENATED_IRON_INGOT.get());
 
         withExistingParent(ModItems.LEOPARD_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.KOMODO_DRAGON_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));

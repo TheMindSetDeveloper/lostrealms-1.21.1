@@ -1,4 +1,4 @@
-// 1.21	2025-09-30T00:56:07.1587888	Recipes
+// 1.21	2025-10-03T22:19:38.5778971	Recipes
 711fb0a378a26728050e2fccbdad4ab877e27942 data/lostrealms/advancement/recipes/building_blocks/steel_ingot.json
 9e1e5d1a1718a8cbdaa8f63805efdcb8d9cb9490 data/lostrealms/advancement/recipes/misc/fossil_block.json
 7d24dc34bfbe7e01fd3b047c1f49ad4a103f3abb data/lostrealms/advancement/recipes/misc/fossil_dust_from_blasting_fossil_block.json
@@ -15,3 +15,5 @@ b28340a1c22ad7a91fe67f16e144545d88d4fc03 data/lostrealms/recipe/fossil_dust_from
 c1ab96ecd5ccecd3221ed719516f8fe2dfbbba2a data/lostrealms/recipe/fossil_fuel_from_smelting_fossil_dust.json
 615104d23a17477fee130c3058947a78d06660bb data/lostrealms/recipe/steel_block.json
 1aa3cb5d8a5c5498a20f395af6ecaf886b1aa376 data/lostrealms/recipe/steel_ingot.json
+7de09abf63f87841b54bb687fd64e9b4c2bd94d0 data/minecraft/advancement/recipes/misc/name_tag.json
+f295c6474501d641bf4aad9cd982d28c8e751fc5 data/minecraft/recipe/name_tag.json
